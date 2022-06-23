@@ -11,21 +11,21 @@ function Control(props: { step: number; setStep: React.Dispatch<number> }) {
             setStep(1);
           }}
         >
-          Lampe 1
+          <img src={`img/lamp1.png`} alt="lampe 1" />
         </li>
         <li
           onClick={() => {
             setStep(2);
           }}
         >
-          Lampe 2
+          <img src={`img/lamp2.png`} alt="lampe 2" />
         </li>
         <li
           onClick={() => {
             setStep(3);
           }}
         >
-          Lampe 3
+          <img src={`img/lamp3.png`} alt="lampe 3" />
         </li>
       </ul>
     </div>

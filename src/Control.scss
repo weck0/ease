@@ -2,6 +2,25 @@
   ul {
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding: 8px;
+    right: 0;
+
+    li {
+      padding: 17px;
+      border-radius: 7px;
+      height: 65px;
+      width: 65px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      img {
+        height: 100%;
+      }
+
+      &:hover {
+        background-color: #deedee;
+      }
+    }
   }
 }
