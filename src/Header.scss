@@ -1,0 +1,11 @@
+.Header {
+  display: flex;
+  justify-content: space-between;
+  ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    gap: 28px;
+  }
+}
