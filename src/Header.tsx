@@ -6,16 +6,16 @@ function Header() {
       <img src="/ease.svg" alt="logo" />
       <ul>
         <li>
-          <a href="#">Movies</a>
-        </li>
-        <li>
-          <a href="#">About</a>
+          <a href="#">Collections</a>
         </li>
         <li>
           <a href="#">Blog</a>
         </li>
         <li>
-          <a href="#">Contact</a>
+          <a href="#">About</a>
+        </li>
+        <li>
+          <a href="#">Contacts</a>
         </li>
       </ul>
     </div>
