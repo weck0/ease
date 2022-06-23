@@ -5,18 +5,29 @@
 
     .left {
       flex: 4;
-      p {
+      .description {
         padding-left: 1.2em;
         font-family: "Poppins";
         font-style: normal;
         font-weight: 600;
-        font-size: 16px;
+        font-size: 14px;
         line-height: 32px;
+      }
+      .description2 {
+        padding-left: 1.2em;
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 32px;
+        border-bottom: 1px solid #c4c4c4;
+        padding-bottom: 40px;
       }
     }
     .right {
       flex: 5;
       border-radius: 1.5em;
+      margin-right: 1em;
     }
   }
 }

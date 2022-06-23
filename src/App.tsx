@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import "./App.scss";
 import Header from "./Header";
+import Meta from "./Meta";
+import Control from "./Control";
 
 function App() {
+  const [step, setStep] = useState(1);
   return (
     <div className="App">
       <Header />
@@ -12,17 +15,24 @@ function App() {
             Collection of lighting is inspired by the geometric works of the
             great Suprematist artists Kissitzky and Kazimir Malevich.
           </p>
-          <p>
+          <p className="description2">
             Suprematism is a modernist movement in the art of the early
             twentieth century, focused on the basic geometric forms, such as
             circles, squares, lines and rectangles. The geometric structure of
             the lamps will always look like a small art objects in your house.
           </p>
-          <div className="metas"></div>
+          <div className="controls">
+            <div className="metas">
+              <Meta step={step} />
+            </div>
+            <div className="control">
+              <Control step={step} setStep={setStep} />
+            </div>
+          </div>
         </div>
         <div
           className="right"
-          style={{ backgroundImage: "url(/mask-group.png)" }}
+          style={{ backgroundImage: "url(/img/mask-group.png)" }}
         ></div>
       </div>
     </div>
