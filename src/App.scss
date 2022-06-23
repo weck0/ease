@@ -1,0 +1,22 @@
+.App {
+  .container {
+    display: flex;
+    height: 100vh;
+
+    .left {
+      flex: 4;
+      p {
+        padding-left: 1.2em;
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 32px;
+      }
+    }
+    .right {
+      flex: 5;
+      border-radius: 1.5em;
+    }
+  }
+}

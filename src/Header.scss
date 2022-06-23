@@ -1,11 +1,32 @@
 .Header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding: 2em;
+  img {
+    width: 219px;
+  }
   ul {
     display: flex;
     list-style-type: none;
     padding: 0;
     margin: 0;
     gap: 28px;
+  }
+  li {
+    a {
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 21px;
+      line-height: 133.84%;
+      /* or 28px */
+
+      letter-spacing: 0.055em;
+      text-transform: uppercase;
+      text-decoration: none;
+
+      color: #3d9090;
+    }
   }
 }

@@ -1,9 +1,9 @@
-import React from "react";
 import "./Header.scss";
 
 function Header() {
   return (
     <div className="Header">
+      <img src="/ease.svg" alt="logo" />
       <ul>
         <li>
           <a href="#">Movies</a>
