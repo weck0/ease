@@ -1,7 +1,13 @@
 import "./Control.scss";
 
-function Control(props: { step: number; setStep: React.Dispatch<number> }) {
+function Control(props: {
+  step: number;
+  setStep: React.Dispatch<number>;
+  darkmode: boolean;
+  setDarkMode: React.Dispatch<boolean>;
+}) {
   const { step, setStep } = props;
+  const { darkmode, setDarkMode } = props;
 
   return (
     <div className="Control">
@@ -29,10 +35,18 @@ function Control(props: { step: number; setStep: React.Dispatch<number> }) {
         </li>
       </ul>
       <div className="day-night">
-        <span>
+        <span
+          onClick={() => {
+            setDarkMode(false);
+          }}
+        >
           <img src="img/day.svg"></img>
         </span>
-        <span>
+        <span
+          onClick={() => {
+            setDarkMode(true);
+          }}
+        >
           <img src="img/night.svg"></img>
         </span>
       </div>

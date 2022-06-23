@@ -6,6 +6,7 @@ import Control from "./Control";
 
 function App() {
   const [step, setStep] = useState(1);
+  const [darkmode, setDarkMode] = useState(false);
   return (
     <div className="App">
       <Header />
@@ -26,7 +27,12 @@ function App() {
               <Meta step={step} />
             </div>
             <div className="controls">
-              <Control step={step} setStep={setStep} />
+              <Control
+                step={step}
+                setStep={setStep}
+                darkmode={darkmode}
+                setDarkMode={setDarkMode}
+              />
             </div>
           </div>
         </div>
@@ -34,6 +40,10 @@ function App() {
           className="right"
           style={{ backgroundImage: "url(/img/mask-group.png)" }}
         >
+          <div
+            className={`dark-image ${darkmode && `active`}`}
+            style={{ backgroundImage: "url(/img/mask-group.png)" }}
+          ></div>
           <img
             src={`img/lamp1.png`}
             alt="lampe 1"
