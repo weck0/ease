@@ -28,6 +28,14 @@ function Control(props: { step: number; setStep: React.Dispatch<number> }) {
           <img src={`img/lamp3.png`} alt="lampe 3" />
         </li>
       </ul>
+      <div className="day-night">
+        <span>
+          <img src="img/day.svg"></img>
+        </span>
+        <span>
+          <img src="img/night.svg"></img>
+        </span>
+      </div>
     </div>
   );
 }
