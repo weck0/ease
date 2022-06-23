@@ -35,19 +35,19 @@ function Meta(props: { step: number }) {
     <div className="Meta">
       <ul>
         <li>
-          <strong>Material</strong>
+          <strong>Material: </strong>
           {metas[step].material}
         </li>
         <li>
-          <strong>Dimension</strong>
+          <strong>Dimension: </strong>
           {metas[step].dimensions}
         </li>
         <li>
-          <strong>Net Weight</strong>
+          <strong>Net Weight: </strong>
           {metas[step].weight}
         </li>
         <li>
-          <strong>Electtrification</strong>
+          <strong>Electtrification: </strong>
           {metas[step].electrification}
         </li>
       </ul>
