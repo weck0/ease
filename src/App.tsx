@@ -25,7 +25,7 @@ function App() {
             <div className="metas">
               <Meta step={step} />
             </div>
-            <div className="control">
+            <div className="controls">
               <Control step={step} setStep={setStep} />
             </div>
           </div>
@@ -33,7 +33,23 @@ function App() {
         <div
           className="right"
           style={{ backgroundImage: "url(/img/mask-group.png)" }}
-        ></div>
+        >
+          <img
+            src={`img/lamp1.png`}
+            alt="lampe 1"
+            className={step === 1 ? "active" : ""}
+          />
+          <img
+            src={`img/lamp2.png`}
+            alt="lampe 2"
+            className={step === 2 ? "active" : ""}
+          />
+          <img
+            src={`img/lamp3.png`}
+            alt="lampe 3"
+            className={step === 3 ? "active" : ""}
+          />
+        </div>
       </div>
     </div>
   );
