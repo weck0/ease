@@ -42,7 +42,7 @@ function App() {
         >
           <div
             className={`dark-image ${darkmode && `active`}`}
-            style={{ backgroundImage: "url(/img/mask-group.png)" }}
+            style={{ backgroundImage: "url(/img/mask-group-dark.png)" }}
           ></div>
           <img
             src={`img/lamp1.png`}

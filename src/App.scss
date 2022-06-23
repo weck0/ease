@@ -38,6 +38,19 @@
       position: relative;
       background-size: cover;
       background-position: center;
+      overflow: hidden;
+
+      .dark-image {
+        position: absolute;
+        inset: 0;
+        background-size: cover;
+        background-position: center;
+        opacity: 0;
+        transition: all 600ms ease;
+        &.active {
+          opacity: 1;
+        }
+      }
       img {
         opacity: 0;
         position: absolute;

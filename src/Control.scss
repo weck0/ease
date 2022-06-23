@@ -41,6 +41,9 @@
         width: 40%;
         height: 38px;
       }
+      &.active {
+        box-shadow: inset 0px 0px 4px 3px rgb(0 0 0 / 25%);
+      }
     }
     span:first-child {
       background: #fff3da;

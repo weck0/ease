@@ -39,6 +39,7 @@ function Control(props: {
           onClick={() => {
             setDarkMode(false);
           }}
+          className={`${darkmode === false ? `active` : ``}`}
         >
           <img src="img/day.svg"></img>
         </span>
@@ -46,6 +47,7 @@ function Control(props: {
           onClick={() => {
             setDarkMode(true);
           }}
+          className={`${darkmode && `active`}`}
         >
           <img src="img/night.svg"></img>
         </span>
